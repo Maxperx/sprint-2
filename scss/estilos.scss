@@ -1,0 +1,251 @@
+///////////////////////
+//Colores principales//
+//////////////////////
+
+$principal: #fca311;
+$primary: $principal;
+
+$secundario: #14213d;
+$secondary: $secundario;
+
+$OrangeButton: (
+  "OrangeButton": #FB5859
+);
+
+//////////////////////
+
+body{
+    background-color: #F8F9FA !important;
+}
+
+.reset-margin { margin-left: 0; margin-right: 0; }
+
+///////////////////////
+///////  MENU  ///////
+//////////////////////
+
+
+
+a.nav-link.mx-2.fw-bold:hover{
+  color: $primary;
+  cursor: pointer;
+}
+
+/* li.nav-item{
+    font-size: 13px;
+  } */
+
+.logins{
+    background-color: #FB5859;
+    border-radius: 5px;
+  }
+
+///////////////////////
+/////  SECTION 1  ////
+//////////////////////
+
+.container.uno{
+  margin-top: 5rem
+} 
+
+.image1{
+  position: relative;
+  top: 0%; /* sirve en caso de un div como este, donde tiene una altura definida, en caso de que la altura no este definida esta edición no se pone ; */
+  right: 0; /* se debe usar para que margin 0 auto funcione */
+  left: 0; /* se debe usar para que margin 0 auto funcione */
+  margin: 0 auto; /* Esto lo centra */
+}
+
+p.h1.simplemk{
+  display: block;
+}
+
+p.h5.text{
+  font-size: 1rem;
+  color:rgb(159, 159, 159);
+}
+
+button.btn{
+    font-size: 13px;
+    padding: 10px 15px 10px 15px;
+    margin-right: 4px;
+}
+
+button.btn.chrome{
+    background-color: #5267DF;
+}
+
+button.btn.firefox{
+    background-color: #e4e4e4;
+}
+
+///////////////////////
+/////  SECTION 2  ////
+//////////////////////
+
+li{
+  display: flex;
+} 
+
+.featureText{
+  text-align: center;
+}
+
+p.h5.text2{
+  font-size: 15px;
+  display:flex !important;
+  color:rgb(159, 159, 159);
+  text-align: center;
+}
+p.h5.text3{
+  font-size: 15px;
+  display:flex !important;
+  color:rgb(159, 159, 159);
+  text-align: center;
+}
+
+.nav-link {
+  display: block;
+  padding: 0.5rem !important; 
+  }
+
+.nav-pills .nav-link{
+  border-bottom: rgb(113, 113, 113) 1px solid !important;
+  color: #808079 !important;
+  border-radius: 0rem !important;
+}
+.nav-pills .nav-link.active{
+padding-bottom: 1rem;
+  border-bottom: #fca311 5px solid !important;
+  color: #000000 !important;
+  border-radius: 0rem;
+}
+
+///////////////////////
+///////  Cards ///////
+//////////////////////
+img.card-img-top{
+  display: block;
+  margin: auto;
+}
+
+p.h5.textcard{
+  font-size: 15px;
+  color:rgb(159, 159, 159);
+  text-align: center;
+}
+
+div.row.caja{
+  padding: 100px;
+}
+
+
+///////////////////////
+////// Acordion //////
+//////////////////////
+
+button.accordion-button.collapsed.bg-light.fw-bold {
+  font-size: 15px;
+}
+
+.accordion-button::after {
+  background-image: url(../images/icon-arrow.svg) !important;
+}
+
+///////////////////////
+////// Contacto //////
+//////////////////////
+
+.container-fluid.contact{
+  padding: 25px;
+  background-color: #5267DF;
+}
+
+button.btn.contactbutton{
+  background-color: #FB5859;
+}
+
+
+
+
+///////////////////////
+//////  Footer  //////
+//////////////////////
+
+.container-fluid.footer{
+  background-color: #222f78;
+
+}
+.navbar-collapse.collapse.in {
+  display: block !important;
+}
+
+footer{
+  width:100%;
+  padding-bottom: 20px;
+  background-color: #242946;
+}
+
+div.footermenu>a{
+  color: #F8F9FA;
+  text-decoration: none;
+}
+
+div.footermenu>a:hover{
+  color: $primary;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 576px) {
+
+  .pt-3.card2{
+    padding-top: 40px !important;
+  }
+  
+  .pt-3.card3{
+    padding-top: 80px !important;
+  }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  p.h5.text3{
+    width: 50%;
+    margin: auto;
+    display:flex !important;
+    font-size: 15px;
+    color:rgb(159, 159, 159);
+    text-align: center;
+  }
+
+  div.navbar.footer{
+    text-align: center;
+  }
+  
+  }
+
+
+@media only screen and (max-width: 576px) {
+
+div.navbar.footer{
+  text-align: center;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  p.h5.text{
+    font-size: 1rem;
+    color:rgb(159, 159, 159);
+  }
+  
+  button.btn{
+      font-size: 13px;
+      margin-top: 10px;
+
+  }
+}
+
+@import "../libs/bootstrap/scss/bootstrap";
